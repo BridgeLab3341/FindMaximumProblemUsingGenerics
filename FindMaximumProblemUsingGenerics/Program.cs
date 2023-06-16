@@ -1,4 +1,7 @@
-﻿namespace FindMaximumProblemUsingGenerics
+﻿using System.IO;
+using System;
+
+namespace FindMaximumProblemUsingGenerics
 {
     class Program
     {
@@ -7,7 +10,7 @@
             bool flag=true;
             while(flag)
             {
-                Console.WriteLine("Choose Option to Perform\n1.Find Maximum Integers\n2.Find Maximum Floats\n3.Exit");
+                Console.WriteLine("Choose Option to Perform\n1.Find Maximum Integers\n2.Find Maximum Floats\n3.Find Maximum String\n4.Exit");
                 int option=Convert.ToInt32(Console.ReadLine());
                 MaximumOperation operation = new MaximumOperation();
                 switch(option)
@@ -18,7 +21,10 @@
                         case 2:
                         operation.MaximumFloats(2.3f, 56.3f, 34.4f);
                         break;
-                    case 3:
+                        case 3:
+                        operation.MaximumString("Banana","Apple","Peach");
+                        break;
+                    case 4:
                         flag = false;
                         break;
                 }

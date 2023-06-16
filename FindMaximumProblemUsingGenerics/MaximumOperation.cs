@@ -26,5 +26,14 @@ namespace FindMaximumProblemUsingGenerics
             if (c.CompareTo(a) > 0 && c.CompareTo(b) > 0)
                 Console.WriteLine("{0} is Maximum", c);
         }
+        public void MaximumString(string a, string b, string c)
+        {
+            if (a.CompareTo(b) > 0 && a.CompareTo(c) > 0)
+                Console.WriteLine("{0} is Maximum", a);
+            if (b.CompareTo(a) > 0 && b.CompareTo(c) > 0)
+                Console.WriteLine("{0} is Maximum", b);
+            if (c.CompareTo(a) > 0 && c.CompareTo(b) > 0)
+                Console.WriteLine("{0} is Maximum", c);
+        }
     }
 }
