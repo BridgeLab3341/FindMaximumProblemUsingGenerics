@@ -15,7 +15,7 @@ namespace FindMaximumProblemUsingGenerics
                 switch(option)
                 {
                     case 1:
-                        MaximumOperation<int> max1= new MaximumOperation<int> (32,43,23);
+                        MaximumOperation<int> max1 = new MaximumOperation<int> (32,43,23);
                         max1.FindMaximum();
                         break;
                         case 2:

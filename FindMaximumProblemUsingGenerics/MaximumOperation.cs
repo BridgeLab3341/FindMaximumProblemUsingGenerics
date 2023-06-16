@@ -18,11 +18,11 @@ namespace FindMaximumProblemUsingGenerics
         public void FindMaximum()
         {
             if (a.CompareTo(b) > 0 && a.CompareTo(c) > 0)
-                Console.WriteLine("{0} is Maximum", a);
+                Console.WriteLine("{0} is Maximum",a);
             if (b.CompareTo(a) > 0 && b.CompareTo(c) > 0)
-                Console.WriteLine("{0} is Maximum", b);
+                Console.WriteLine("{0} is Maximum",b);
             if (c.CompareTo(a) > 0 && c.CompareTo(b) > 0)
-                Console.WriteLine("{0} is Maximum", c);
+                Console.WriteLine("{0} is Maximum",c);
         }
     }
 }
