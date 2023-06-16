@@ -15,15 +15,15 @@ namespace FindMaximumProblemUsingGenerics
                 switch(option)
                 {
                     case 1:
-                        MaximumOperation<int> max1 = new MaximumOperation<int> (32,43,23);
+                        MaximumOperation<int> max1 = new MaximumOperation<int> (32,43,23,45);
                         max1.FindMaximum();
                         break;
                         case 2:
-                        MaximumOperation<float> max2 = new MaximumOperation<float>(12.4f, 23.4f, 33.2f);
+                        MaximumOperation<float> max2 = new MaximumOperation<float>(12.4f, 23.4f, 33.2f,65.2f);
                         max2.FindMaximum();
                         break;
                         case 3:
-                        MaximumOperation<string> max3 = new MaximumOperation<string>("Banana","Apple","Peach");
+                        MaximumOperation<string> max3 = new MaximumOperation<string>("Banana","Apple","Peach","Power");
                         max3.FindMaximum();
                         break;
                     case 4:
