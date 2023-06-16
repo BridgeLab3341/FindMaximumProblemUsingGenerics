@@ -13,7 +13,7 @@
                 switch(option)
                 {
                     case 1:
-                        operation.Maximum(39,23,35);
+                        operation.MaximumInteger(39,23,35);
                         break;
                     case 2:
                         flag = false;

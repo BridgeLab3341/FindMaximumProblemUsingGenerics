@@ -8,7 +8,7 @@ namespace FindMaximumProblemUsingGenerics
 {
     public class MaximumOperation
     {
-        public void Maximum(int a, int b, int c)
+        public void MaximumInteger(int a, int b, int c)
         {
             if(a.CompareTo(b) >0 && a.CompareTo(c) >0)
                 Console.WriteLine("{0} is Maximum",a);
