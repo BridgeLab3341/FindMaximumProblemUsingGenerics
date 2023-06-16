@@ -6,27 +6,16 @@ using System.Threading.Tasks;
 
 namespace FindMaximumProblemUsingGenerics
 {
-    public class MaximumOperation
+    public class MaximumOperation<T> where T : IComparable
     {
-        public void MaximumInteger(int a, int b, int c)
+        public T a,b,c;
+        public MaximumOperation(T a,T b,T c)
         {
-            if(a.CompareTo(b) >0 && a.CompareTo(c) >0)
-                Console.WriteLine("{0} is Maximum",a);
-            if(b.CompareTo(a)>0 && b.CompareTo(c) >0)
-                Console.WriteLine("{0} is Maximum",b);
-            if(c.CompareTo(a)>0 && c.CompareTo(b)>0)
-                Console.WriteLine("{0} is Maximum",c);
+            this.a= a; 
+            this.b = b; 
+            this.c= c;
         }
-        public void MaximumFloats(float a, float b, float c)
-        {
-            if (a.CompareTo(b) > 0 && a.CompareTo(c) > 0)
-                Console.WriteLine("{0} is Maximum", a);
-            if (b.CompareTo(a) > 0 && b.CompareTo(c) > 0)
-                Console.WriteLine("{0} is Maximum", b);
-            if (c.CompareTo(a) > 0 && c.CompareTo(b) > 0)
-                Console.WriteLine("{0} is Maximum", c);
-        }
-        public void MaximumString(string a, string b, string c)
+        public void FindMaximum()
         {
             if (a.CompareTo(b) > 0 && a.CompareTo(c) > 0)
                 Console.WriteLine("{0} is Maximum", a);
