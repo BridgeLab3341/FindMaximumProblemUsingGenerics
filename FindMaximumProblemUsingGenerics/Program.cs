@@ -23,7 +23,7 @@ namespace FindMaximumProblemUsingGenerics
                         max2.FindMaximum();
                         break;
                         case 3:
-                        MaximumOperation<string> max3 = new MaximumOperation<string>("Banana","Apple","Peach","Power");
+                        MaximumOperation<string> max3 = new MaximumOperation<string>("Banana","Apple","Peach","Waterme");
                         max3.FindMaximum();
                         break;
                     case 4:
