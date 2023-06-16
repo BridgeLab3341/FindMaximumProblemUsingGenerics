@@ -17,5 +17,14 @@ namespace FindMaximumProblemUsingGenerics
             if(c.CompareTo(a)>0 && c.CompareTo(b)>0)
                 Console.WriteLine("{0} is Maximum",c);
         }
+        public void MaximumFloats(float a, float b, float c)
+        {
+            if (a.CompareTo(b) > 0 && a.CompareTo(c) > 0)
+                Console.WriteLine("{0} is Maximum", a);
+            if (b.CompareTo(a) > 0 && b.CompareTo(c) > 0)
+                Console.WriteLine("{0} is Maximum", b);
+            if (c.CompareTo(a) > 0 && c.CompareTo(b) > 0)
+                Console.WriteLine("{0} is Maximum", c);
+        }
     }
 }
